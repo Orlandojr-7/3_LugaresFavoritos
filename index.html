@@ -1,23 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Destinos Turísticos de Colombia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
-    <h1>1</h1>
+    <header>
+        <h1>🌎 Destinos Turísticos de Colombia 🌎</h1>
+        <p>Conoce los lugares más emblemáticos y llenos de historia en nuestro país.</p>
+    </header>
+
+    <main class="container">
+        <!-- Destino 1 -->
+        <div class="card">
+            <h2>Cartagena de Indias</h2>
+            <img src="https://media.staticontent.com/media/pictures/9495889e-54f9-40d2-939d-b04bf30b47c7" alt="Cartagena de Indias">
+            <p class="descripcion">Fundada en 1533, Cartagena de Indias es Patrimonio de la Humanidad por la UNESCO. Su ciudad amurallada y su historia colonial la convierten en uno de los destinos más visitados de Colombia.</p>
+            <button onclick="toggleInfo('cartagena')">Ver más información</button>
+            <div id="cartagena" class="extra">
+                <h3>Ubicación Geográfica</h3>
+                <p>Está ubicada en la costa norte de Colombia, a orillas del Mar Caribe.</p>
+            </div>
+        </div>
+
+        <!-- Destino 2 -->
+        <div class="card">
+            <h2>Medellín</h2>
+            <img src="https://blogdesarrolladores.lahaus.com/hubfs/Fotos_La_haus__19___1_.jpg" alt="Medellín">
+            <p class="descripcion">Conocida como la "Ciudad de la Eterna Primavera" por su clima agradable, Medellín se destaca por su transformación urbana y cultural.</p>
+            <button onclick="toggleInfo('medellin')">Ver más información</button>
+            <div id="medellin" class="extra">
+                <h3>Ubicación Geográfica</h3>
+                <p>Situada en el Valle de Aburrá, en la región montañosa de Antioquia.</p>
+            </div>
+        </div>
+
+        <!-- Destino 3 -->
+        <div class="card">
+            <h2>San Andrés Islas</h2>
+            <img src="https://media.staticontent.com/media/pictures/ecc404e8-9a99-46b0-a56a-ead992b5166e" alt="San Andrés Islas">
+            <p class="descripcion">Famosa por su mar de siete colores, San Andrés es un paraíso caribeño que mezcla cultura raizal, playas y arrecifes de coral.</p>
+            <button onclick="toggleInfo('sanandres')">Ver más información</button>
+            <div id="sanandres" class="extra">
+                <h3>Ubicación Geográfica</h3>
+                <p>Está ubicada en el mar Caribe, a unos 750 km al noroeste de la costa colombiana.</p>
+            </div>
+        </div>
+
+        <!-- Destino 4 -->
+        <div class="card">
+            <h2>Parque Nacional Natural Tayrona</h2>
+            <img src="https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2020/04/10142838/image.jpg" alt="Parque Tayrona">
+            <p class="descripcion">Un lugar sagrado para los pueblos indígenas de la Sierra Nevada de Santa Marta, con playas paradisíacas y selva tropical.</p>
+            <button onclick="toggleInfo('tayrona')">Ver más información</button>
+            <div id="tayrona" class="extra">
+                <h3>Ubicación Geográfica</h3>
+                <p>En la costa norte de Colombia, cerca de la ciudad de Santa Marta.</p>
+            </div>
+        </div>
+
+        <!-- Destino 5 -->
+        <div class="card">
+            <h2>Caño Cristales</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/CA%C3%91O_CRISTALES%2C_EL_R%C3%8DO_DE_COLORES.jpg" alt="Caño Cristales">
+            <p class="descripcion">Conocido como "el río de los cinco colores", Caño Cristales es un fenómeno natural único gracias a las plantas acuáticas que tiñen sus aguas.</p>
+            <button onclick="toggleInfo('cano')">Ver más información</button>
+            <div id="cano" class="extra">
+                <h3>Ubicación Geográfica</h3>
+                <p>Se encuentra en la Sierra de la Macarena, en el departamento del Meta.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>✈️ Turismo en Colombia - Vive la experiencia ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
